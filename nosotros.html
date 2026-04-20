@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Titan Supplements - Sobre Nosotros.">
+    <title>Titan Supplements - Nosotros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .nosotros-section {
+            padding: 150px 10% 80px;
+            min-height: 80vh;
+        }
+
+        .nosotros-section h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--text-main);
+            letter-spacing: 3px;
+        }
+
+        .nosotros-section p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">TITAN<span>SUPPS</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <button class="nav-btn" id="loginBtn">Ingresar</button>
+    </header>
+
+    <section class="nosotros-section">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>En Titan Supplements, nacimos con una única misión: proporcionar el equipamiento de élite necesario para que
+            superes tus límites humanos. No somos una marca más, somos el Escuadrón de Reconocimiento del fitness.</p>
+        <p>Aquí encontrarás suplementos formulados con la máxima precisión, diseñados para otorgarte fuerza explosiva,
+            energía inagotable y recuperación acelerada. Entregamos todo nuestro esfuerzo para que tú puedas entregar tu
+            corazón a los hierros.</p>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2026 Titan Supplements. Entrena duro, pelea con honor. Entrega tu corazón a los hierros.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(10, 14, 19, 0.95)';
+                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.5)';
+            } else {
+                navbar.style.background = 'rgba(13, 17, 23, 0.8)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

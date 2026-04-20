@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Titan Supplements - Suplementos deportivos premium de alto rendimiento. Creatina, proteínas y pre-entrenos para resultados colosales.">
+    <title>Titan Supplements - Equipamiento de Élite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar" id="navbar">
+        <div class="logo">TITAN<span>SUPPS</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+            <button class="nav-btn" id="loginBtn">Ingresar</button>
+            <button class="cart-btn" id="cartBtn">🛒<span class="cart-count">0</span></button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 id="heroTitle">ENTRENA COMO UN <span>TITÁN</span></h1>
+            <p>Descubre los suplementos diseñados para llevar tu físico más allá de los límites humanos. Conviértete en
+                la élite. Sobrevive a cada serie.</p>
+            <button class="cta-btn" id="exploreBtn"
+                onclick="document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });">Explorar
+                Arsenal</button>
+        </div>
+    </section>
+
+    <section id="productos" class="products">
+        <h2 id="productsHeading">NUESTRO ARSENAL</h2>
+        <div class="product-grid">
+            <div class="product-card" id="product1">
+                <div class="image-wrapper"><img
+                        src="https://gladiatorsportpit.ru/image/cache/catalog/kreatin/primekraft/kreatin-monogidrat-prime-kraft-creatine-monohydrate-200-g-kola-1000x1000.jpg"
+                        alt="Titan Creatine Monohydrate"></div>
+                <h3>Titan Creatine Monohydrate</h3>
+                <p>Fuerza explosiva. Siente el poder del Titán de Ataque en cada entrenamiento, retrasando la fatiga
+                    nerviosa.</p>
+                <div class="price">29.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+
+            <div class="product-card" id="product2">
+                <div class="image-wrapper"><img
+                        src="https://cdn.shopify.com/s/files/1/0750/5936/4118/files/CATALOGO_DE_PRODUCTOS_STARK_alta_imagenes-04_1024x1024.png?v=1724443278"
+                        alt="Scout Regiment Whey Protein"></div>
+                <h3>Scout Regiment Whey Protein</h3>
+                <p>Proteína aislada de rápida absorción. Recuperación muscular para soldados de élite. Sabor Vainilla
+                    Colosal.</p>
+                <div class="price">45.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+
+            <div class="product-card" id="product3">
+                <div class="image-wrapper"><img
+                        src="https://static.thcdn.com/productimg/original/14269805-1675129203306464.jpg"
+                        alt="Ackerman Pre-Workout" class="fallback-img">
+                </div>
+                <h3>Ackerman Pre-Workout</h3>
+                <p>Energía inagotable y concentración letal. Prepárate para la batalla final antes de cruzar las puertas
+                    del gimnasio.</p>
+                <div class="price">34.99 €</div>
+                <button class="buy-btn">Añadir al Equipo</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 Titan Supplements. Entrena duro, pelea con honor. Entrega tu corazón a los hierros.</p>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2 id="authTitle">INICIAR SESIÓN</h2>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="modal-btn" id="authSubmit">Ingresar</button>
+            </form>
+            <div class="toggle-form" id="toggleFormBtn">¿No tienes cuenta? <span>Regístrate</span></div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>TU ARSENAL</h2>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Items will be injected here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotalAmount">0.00 €</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
